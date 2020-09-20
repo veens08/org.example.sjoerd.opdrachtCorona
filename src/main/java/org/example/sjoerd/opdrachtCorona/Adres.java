@@ -62,4 +62,14 @@ public class Adres {
         land = newLand;
     }
 
+    String toStringAdresPresentation () {
+        return "Adres[straatnaam = " + straatnaam +
+                " huisnummer = " + huisnummer +
+                " postcode = " + postcode +
+                " woonplaats = "+ woonplaats +
+                " land = " + land + "]";
+        //        " woonplaats " = + woonplaats +
+        //        " land = " + land + "]";
+        }
+
 }
