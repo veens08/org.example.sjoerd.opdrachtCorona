@@ -93,54 +93,54 @@ public class CoronaTests {
         bewoner1.setId (1);
         bewoner1.setNaam ("Bewoner1");
         bewoner1.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner1.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner1.setAdres (adresVanBewoner);
 
         Persoon bewoner2 = new Persoon ();
         bewoner2.setId (1);
         bewoner2.setNaam ("Bewoner2");
         bewoner2.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner2.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner2.setAdres (adresVanBewoner);
 
         Persoon bewoner3 = new Persoon ();
         bewoner3.setId (1);
         bewoner3.setNaam ("Bewoner3");
         bewoner3.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner3.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner3.setAdres (adresVanBewoner);
 
         Persoon bewoner4 = new Persoon ();
         bewoner4.setId (1);
         bewoner4.setNaam ("Bewoner4");
         bewoner4.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner4.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner4.setAdres (adresVanBewoner);
 
         Persoon bewoner5 = new Persoon ();
         bewoner5.setId (1);
         bewoner5.setNaam ("Bewoner5");
         bewoner5.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner5.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner5.setAdres (adresVanBewoner);
 
         Persoon bewoner6 = new Persoon ();
         bewoner6.setId (1);
         bewoner6.setNaam ("Bewoner6");
         bewoner6.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner6.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner6.setAdres (adresVanBewoner);
 
         Persoon bewoner7 = new Persoon ();
         bewoner7.setId (1);
         bewoner7.setNaam ("Bewoner7");
         bewoner7.setLeeftijd (20);
-        Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
-        bewoner7.setAdres (adresVanHuis);
+        Adres adresVanBewoner = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
+        bewoner7.setAdres (adresVanBewoner);
         Huis huis = new Huis ();
 
         huis.setKadasterNummer (1);
-        huis.setAantalKamers (4);
+        huis.setAantalKamers (3);
         Adres adresVanHuis = new Adres ("De jagershuizen", 100, "7316 NC", "Apeldoorn", "Nederland");
         huis.setHuisAdres (adresVanHuis);
         System.out.println (huis.getKadasterNummer ());
@@ -148,7 +148,14 @@ public class CoronaTests {
         System.out.println (adresVanHuis.toStringAdresPresentation ());
         assertThat (huis).isNotNull ();
 
-        if (huis.getAantalKamers () * 2) <
+        int aantalBewoners = 0;
+
+        if (adresVanBewoner.toStringAdresPresentation () = adresVanHuis.toStringAdresPresentation ()) {
+            aantalBewoners++;
+        }
+        if (aantalBewoners > huis.getAantalKamers () * 2) {
+            System.out.println ("Te veel bewoners!");
+        }
     }
 
     @Test
