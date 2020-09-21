@@ -150,9 +150,14 @@ public class CoronaTests {
 
         int aantalBewoners = 0;
 
-        if (adresVanBewoner.toStringAdresPresentation () = adresVanHuis.toStringAdresPresentation ()) {
-            aantalBewoners++;
-        }
+        Persoon [] bewoners = (bewoner1, bewoner2, bewoner3, bewoner4, bewoner5, bewoner6, bewoner7);
+
+        for (int index = 1; index <= bewoners.length; index++); {
+            if (bewoners [index].adresVanBewoner.toStringAdresPresentation () = adresVanHuis.toStringAdresPresentation ()) {
+                aantalBewoners++;
+            }
+        })
+
         if (aantalBewoners > huis.getAantalKamers () * 2) {
             System.out.println ("Te veel bewoners!");
         }
